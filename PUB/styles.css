@@ -17,6 +17,18 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.c-item{
+    height: 570px;
+}
+
+.c-img{
+    height:fit-content;
+    width: fit-content;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0,0, 0, 0.1);
@@ -25,54 +37,55 @@ nav{
 nav ul{
     width:100%;
     list-style: none;
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
     align-items: center;
 }
 
 nav li{
+    display: inline-block;
     height: 50px;
 }
 
 nav a{
+    position: relative;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 23px;
     text-decoration: none;
-    display: flex;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 500;
     align-items: center;
     color: black;
 
 }
 
-nav a:hover{
-    background-color: #f0f0f0;
-}
 
-nav li:first-child{
-    margin-right: auto;
+.container a:hover{
+    background: linear-gradient(45deg,#f62a2a, #353333);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    margin:0;
+} 
 
-}
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
+.container-1{
+    position:relative;
+    height:50px;
+    width: 900px;
+    min-width: 40px;
     z-index: 999;
-    background-color: rgba(255,255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
-    display: flexbox;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    background: linear-gradient(45deg,#ed9d56, #f14848);
+    border-radius: 8px;
+    box-shadow: -10px 0 10px rgba(0,0, 0, 0.5);
+    display: inline-flexbox;
+
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
 }
 
-.sidebar li{
-    width: 100%;
-}
-
-.sidebar a{
-    width: 100%;
+.container-item:hover{
+    color:white;
+    
 }
