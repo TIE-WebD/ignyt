@@ -22,7 +22,7 @@ body{
 }
 
 .c-img{
-    height:fit-content;
+    height:100vh;
     width: fit-content;
     object-fit: cover;
     filter: brightness(0.6);
@@ -74,12 +74,11 @@ nav a{
     height:50px;
     width: 900px;
     min-width: 40px;
-    z-index: 999;
+    z-index: 1;
     background: linear-gradient(45deg,#ed9d56, #f14848);
     border-radius: 8px;
     box-shadow: -10px 0 10px rgba(0,0, 0, 0.5);
     display: inline-flexbox;
-
     flex-direction: row;
     align-items:center;
     justify-content:center;
@@ -88,4 +87,330 @@ nav a{
 .container-item:hover{
     color:white;
     
+}
+
+
+.bg-img-1{
+    background-position: center; 
+    height: 100vh; 
+}
+.bg-img-2{
+   background-position: center;
+   height: 100vh;
+}
+.bg-img-3{
+   background-position: center;
+   height: 100vh;
+}
+
+.wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.wrapper .icon{
+    margin-left: 10px;
+    bottom: 325px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper .icon span{
+    position: relative;
+    height: 60px;
+    font-weight: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    z-index: 999;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .icon:hover span i{
+    color: #000000;
+}
+
+.wrapper .icon span i{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.wrapper .icon .tooltip{
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tooltip::before{
+    position: absolute;
+    content: " ";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%) rotate (45deg);
+}
+
+
+/* .wrapper .icon:hover  */
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px, 0px rgba(0, 0, 0, 0.4);
+}
+
+/* .wrapper .facebook:fullscreen 
+.wrapper .facebook:hover .tooltip */
+.wrapper .facebook:hover .tooltip{
+    background: #3B5999;
+
+}
+
+/* .wrapper .twitter:hover 
+.wrapper .twitter:hover .tooltip */
+.wrapper .twitter:hover .tooltip{
+    background: #46C1F6;
+
+}
+
+/* .wrapper .instagram:hover 
+.wrapper .instagram:hover .tooltip */
+.wrapper .instagram:hover .tooltip{
+    background: #e1306c;
+
+}
+ 
+
+/* .container{
+    height: 60%;
+    width: 100%;
+    /* background-color: aqua;  */
+*/
+
+section{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(18, 27, 27);  */
+}
+
+.one{
+    /* border-right: 50%; */
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        /* height: 100%; */
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+
+      }
+    /* background-color: rgb(4, 61, 61); */
+}
+
+.two{
+    background-color: rgb(17, 110, 110);
+}
+
+.three{
+    background-color: rgb(92, 121, 121);
+}
+
+.four{
+    background-color: rgb(60, 236, 236);
+}
+
+.five{
+    background-color: rgb(131, 140, 140);
+}
+
+.six{
+    background-color: rgb(28, 80, 80);
+}
+
+.button{
+    background-color: #a4cb2f; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#carousel-indicators{
+   bottom:0;     
+}
+
+
+
+  @media (min-width:319px) and (max-width:480px){
+    body{
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    }
+  }
+
+
+@media (min-width: 481px) and (max-width:1200px){   
+
+    nav ul{
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .navbar .container,
+    .navbar .container-fluid,
+    .navbar .container-lg,
+    .navbar .container-md,
+    .navbar .container-sm,
+    .navbar .container-xl {
+        height: 100%;
+        width:100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        text-wrap:wrap;
+    }
+
+    .bg-img-1{
+        background-position: center; 
+        height: 100vh; 
+    }
+    .bg-img-2{
+       background-position: center;
+       height: 100vh;
+    }
+    .bg-img-3{
+       background-position: center;
+       height: 100vh;
+    }
+
+    .wrapper .icon{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    h1{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        text-align: center; 
+    }
+
+    .carousel-caption{
+        text-align: center;
+
+    }
+
+}
+
+
+
+@media (min-width:319px) and (max-width:480px){
+    .wrapper .icon{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .navbar .container,
+    .navbar .container-fluid,
+    .navbar .container-lg,
+    .navbar .container-md,
+    .navbar .container-sm,
+    .navbar .container-xl {
+        height: 100%;
+        width:100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        text-wrap:wrap;
+    }
+
+    .bg-img-1{
+        background-position: center; 
+        height: 100%; 
+        width: 100%;
+    }
+    .bg-img-2{
+       background-position: center;
+       height: 100%;
+       width: 100%;
+    }
+    .bg-img-3{
+       background-position: center;
+       height: 100%;
+       width: 100%;
+    }
+
+
+
 }
