@@ -4,3 +4,6 @@ All the best Guys!
 
 ----2nd commit----
 The functionalities which were not working are now made functional. the home page layout is almost done!!
+
+----3rd commit----
+The website homepage is made responsive. And also we included the second page i.e., menu page using Cards.
