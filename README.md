@@ -7,3 +7,7 @@ The functionalities which were not working are now made functional. the home pag
 
 ----3rd commit----
 The website homepage is made responsive. And also we included the second page i.e., menu page using Cards. The menu page is also made responsive.
+
+
+----4th commit----
+Feedback and Footer section added and made responsive.
