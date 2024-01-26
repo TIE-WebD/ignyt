@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+
+
+
+[type="submit"] {
+  width: 100%;
+  background: #e23614;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+
+}
+[type="submit"]:hover {
+  background: #dac509;
+}
