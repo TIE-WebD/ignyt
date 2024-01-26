@@ -209,7 +209,7 @@ nav a{
 */
 
 section{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* background-color: rgb(18, 27, 27);  */
 }
@@ -276,30 +276,16 @@ section{
     border-radius: 12px;
 }
 
-h1{
+h1,h2{
     text-align: center;
     font-family:"Poppins", sans-serif;
 }
 
-/* .two{
-    background-color: rgb(17, 110, 110);
-}
 
-.three{
-    background-color: rgb(92, 121, 121);
-}
-
-.four{
-    background-color: rgb(60, 236, 236);
-}
-
-.five{
-    background-color: rgb(131, 140, 140);
-}
 
 .six{
-    background-color: rgb(28, 80, 80);
-} */
+    height: 60%;
+} 
 
 .button{
     background-color: #a4cb2f; 
@@ -323,7 +309,13 @@ h1{
 
 @media (min-width: 1601px){
     .main{
-        position: fixed;
+        position: sticky;
+        z-index: 999;
+    }
+}
+@media (min-width:1201px) and (max-width:1600px){
+    .main{
+        position: sticky;
         z-index: 999;
     }
 }
@@ -418,7 +410,7 @@ h1{
 
     }
 
-    .formm-control{
+    .form-control{
         height: 100%;
         width: 100%;
     }
@@ -513,6 +505,14 @@ h1{
         margin-right: 20px;
     }
 
+    .card-img,
+    .card-img-top{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: contain;
+    }
+
 
 
 }
@@ -602,6 +602,8 @@ th{
 
 
 
+
+
 .footer-logo{
     position: relative;
     padding-left: 20px;
@@ -622,6 +624,10 @@ th{
 
 
 }
+p:hover{
+    color: white;
+}
+
 
 #footer{
     background:#f6f2ee ;
@@ -639,6 +645,68 @@ th{
     transform: scale(1.055, 1.055);
     box-shadow: 0 0 50px rgb(232, 188, 128);
 
+}
+
+.offers{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.button2{
+    background-color: #928db4; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+    height: 100vh;
+}
+
+.project-card{
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 5px 20px;
+}
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+}
+.six{
+    background: linear-gradient(45deg, #bbb7b7, #ecb6b6);
+}
+.project-card{
+    background-color: #fff;
+}
+@media only screen and (max-width:1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.imga{
+    width: 150px;
+   height: 150px;
+   overflow: hidden;
+   
 }
 
 

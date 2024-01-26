@@ -20,11 +20,8 @@
     padding:0 ;
   }
 </style>
-
-
 <body>
  
-
 <div class="main">   
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -59,9 +56,6 @@
 </div>
 
 
-
-
-
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,7 +68,19 @@
       
       <div class="carousel-caption top-0 mt-4">
         <h1 class="display-1 fw-bolder text-capitalize"><b>IGNYT</b></h1>
-        <p><i><b>Feeling Low? Get High!</b></i></p>
+        <p><i><b>"Feeling Low? Get High!"</b></i></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <h2><i><b>"Click on the surprise button to checkout the most exciting part of our IGNYT!!"</b></i></h2>
+        <h2>JUST FOR YOU!</h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center" >
+          <button class="btn btn-primary me-md-2" type="button" placeholder="offer">
+            <a href="#section4">SURPRISE!</a>
+          </button>
+      </div>
       </div>
     </div>
     <div class="carousel-item c-item bg-img-2">
@@ -84,7 +90,7 @@
         <p style="color:white"><i><b>Drink Triple! See double! Act single!</b></i></p>
       </div>
     </div>
-    <div class="carousel-item c-item">
+    <div class="carousel-item c-item bg-img-3">
       <img src="./images/bottleshowcase.jpg" class="d-block w-100 c-img" alt="bar">
       <div class="carousel-caption">
         <h5>Happy Beer</h5>
@@ -100,6 +106,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 
 <div class="wrapper">
   <div class="icon">
@@ -127,70 +134,137 @@
 </div>
 
 
+
+<section>
+<div class="about-us" id="section1">
+
+  <video width="100%" height="100%" autoplay loop muted>
+    <source src="./images/about us.mp4" type="video/mp4">
+  IGNYT
+  </video>
+  <hr>
+  <img width="100%" height="100%" src="./images/abtuz.png">
+ 
+</div>
+</section>
+
 <div class="contents" id="section2">
   <section class="one">
+    <h3><b>ME-N-U</b></h3>
     <div class="row">
       <div class="column">
-        <div class="card">beers
+        <div class="card"><h5>Beers</h5>
           <div class="pic">
             <img src="./images/beerbeer.jpg" class="d-block w-100" alt="beer menu">
           </div>
           <h5>Try varieties and feel varities!!!</h5>
-         <button class="button">View more</button>
-          </div>
-      </div>
+          <h5>Go for it!!</h5>
+          <button class="button" onclick="myFunction1()">View more</button>
+          <script>
+           function myFunction1() {
+             location.href="https://freekaamaal.com/food/best-beer-brands-in-india";
+           }
+           </script>
+           </div>
+       </div>
       <div class="column">
-        <div class="card">pairs the best with
+        <div class="card"><h5>Pairs The Best With</h5>
           <div class="pic1">
             <img src="./images/combo.jpg" class="d-block w-100" alt="combination" >
           </div>
           <h5>Make sure you try these pairs!!!</h5>
-          <button class="button">View more</button>
+          <h5>Enjoy!!!</h5>
+          <button class="button" onclick="myFunction2()">View more</button>
+          <script>
+            function myFunction2() {
+              location.href="https://beerismylife.com/beer-food/best-beer-with-indian-food/";
+            }
+            </script>
         </div>
       </div>
       <div class="column">
         <div class="card">
-          everyone's fav
+          <h5>Everyone's Fav</h5>
           <div class="pic2">
-            <img src="./images/chefschoice.jpg" class="d-block w-100" alt="everyone's fav" >
+            <img src="./images/best-combooo.jpg" class="d-block w-100" alt="everyone's fav" >
           </div>
           <h5>Tried and tested and loved!!!</h5>
           <h5>Worth the try</h5>
-          <button class="button">View more</button>
+          <button class="button" onclick="myFunction3()">View more</button>
+          <script>
+            function myFunction3() {
+              location.href="https://magicpin.in/blog/best-snacks-with-beer/";
+            }
+            </script>
         </div>
-        
-      </div>
+        </div>
       <div class="column">
-        <div class="card">chef's choice
+        <div class="card"><h5>Chef's Choice</h5>
               <div class="pic2">
                 <img src="./images/chefs.jpg" class="d-block w-100" alt="chef's fav" >
               </div>
               <h5>Chef's suggestion!!!</h5>
               <h5>Make sure you don't miss</h5>
-              <button class="button">View more</button>
-            </div>
-            </div>
+              <button class="button" onclick="myFunction4()">View More</button>
+          <script>
+            function myFunction4() {
+              location.href="https://thebeerexchange.io/beers-for-indian-food/";
+            }
+            </script>
+        </div>
         </div>
       </div>
     </div>
   </section>
- </div>
+</div>
 
+<hr>
+
+<section>
+<h3><b>OFFERS</b></h3>
+<div class="offers" id="section4">
+
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item bg-img-1">
+        <img src="./images/beer499.png" class="d-block w-100" alt="offers">
+      </div>
+      <div class="carousel-item c-item bg-img-2">
+        <img src="./images/order2.png" class="d-block w-100" alt="offers">
+      </div>
+      <div class="carousel-item c-item bg-img-3">
+        <img src="./images/Today.png" class="d-block w-100" alt="offers">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+</section>
+
+<hr>
 
  <section class="three" id="section3">
   <div class="contents">
     <section class="one">
-    <h1>EVENTS</h1>
+    <h3><b>EVENTS</b></h3>
       <div class="row">
         <div class="column">
           <div class="card">
-            <h5>musical night</h5>
+            <h5>Musical Night</h5>
             <div class="pic4">
               <img src="./images/musical-night.jpg" class="d-block w-100" alt="musical night">
             </div>
             <h5>Date:24.01.2023</h5>
             <p>Event Details:One of the best known singer will be in the house</p>
-           <button class="button1">Join Now</button>
+           <button class="button1"><a href="https://gighub.club/event/drum-and-bass-india-x-social-presents-bangaloremassive-024-bangalore-4827/">Join Now</a> </button>
             </div>
         </div>
         <div class="column">
@@ -201,19 +275,19 @@
             </div>
             <h5>Date:24.01.2023</h5>
             <p>Event Details:One of the best known DJ artist will be in the house</p>
-            <button class="button1">Join Now</button>
+            <button class="button1"><a href="https://highape.com/bangalore/events/friday-night-uptown-square-Q7wV8DDvrM?utm_source=allevents_list">Join Now</a></button>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <h5>Ladies Night</h5>
             <div class="pic6">
-              <img src="./images/ladies-night.jpg" class="d-block w-100" alt="ladies night" >
+              <img src="./images/gn.jpg" class="d-block w-100" alt="ladies night" >
             </div>
             <h5>Date:24.01.2023</h5>
             <p>Event Details:All the beautiful ladies will be in the house</p>
             
-            <button class="button1">Join Now</button>
+            <button class="button1"> <a href="https://highape.com/bangalore/events/saturday-ladies-night--dj-shiva--dj-bunty--free-shot-for-girl-n9rRze7yrl?utm_source=allevents_list"> Join Now</a></button>
           </div>
           
         </div>
@@ -225,7 +299,7 @@
             </div>
             <h5>Date:24.01.2023</h5>
             <p>Event Details:First 20 people will have drinks on the house</p>
-            <button class="button1">Join Now</button>
+            <button class="button1"><a href="https://highape.com/bangalore/events/thursday-toxic-a7kjyvD0wY?utm_source=search_list">Join Now</a> </button>
           </div>
           </div>
         </div>
@@ -233,9 +307,98 @@
 </section>
 
 <hr>
+
+<section>
+  <h3><b>BLOG</b></h3>
+  <div class="blog" id="section6">  
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ignite Beer Station: Where Craft Brews Take Flight</h5>
+            <img src="./images/thank unlimited2.png" class="card-img-top" alt="blog1" style="width:45rem; position:relative">
+            <p class="card-text"><a href="./images/thank unlimited2.png" target="_blank">ignyt_the beer station Enjoy unlimited beer in a mug for just 499.</a></p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary" style="justify-content:center; text-align:center">
+          2 days ago
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">BOTTOMLESS SUPPLY</h5>
+            <img src="./images/blogg2.png" class="card-img-top" alt="WHY IGNYT" style="width:45rem; text-align:center">
+            <p class="card-text"><a href="./images/blogsec2.png" target="_blank"> :🍺 The Offer A Bottomless Supply of Your Favorite Brew! 🍺</a></p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary" style="justify-content:center; text-align:center">
+          2 days ago
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Why Choose IGNYT - The Beer Station?</h5>
+            <img src="./images/WHY IGNYT.png" class="card-img-top" alt="WHY IGNYT" style="width:45rem; text-align:center">
+            <p class="card-text"><a href="./images/why.png" target="_blank">Here's our secret</a></p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary" style="justify-content:center; text-align:center">
+          2 days ago
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">ATTENTION BEER N MUSIC LOVERS!</h5>
+            <img src="./images/attentoion2.png" class="card-img-top" alt="beer and music" style="width:45rem; text-align:center">
+            <p class="card-text"><a href="./images/music.png" target="_blank">Here is a special spot for the one who enjoys Beer with Music ON!!</a></p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary" style="justify-content:center; text-align:center">
+          2 days ago
+        </div>
+      </div>
+    </div>
+    
+</div>
+</section>
+    
+<hr>
+
+<section class="six" id="section5">
+  <h3><b>ORDER ONLINE</b></h3>
+  <section class="sub-section-alternative" id="tech-stacks">
+    <div class="project-container" id="contact">
+        <div  class="project-card">
+            <h5>Crafted Beers</h5>
+            <img src="./images/cb1.jpg " class="imga" alt="beer2">
+            <button class="button2" onclick="myFunction5()">Order Now</button>
+            <script>
+              function myFunction5() {
+                location.href="https://www.zomato.com/bangalore/ignyt-the-beer-station-kumaraswamy-layout-bangalore";
+              }
+              </script>
+        </div>
+        <div class="project-card">
+           <h5> Starters</h5>
+           <img src="./images/strat2.jpg" class="imga" alt="starters">
+            <button class="button2" onclick="myFunction5()">Order Now</button>
+        </div>
+        <div class="project-card">
+           <h5>Main Course</h5>
+           <img src="./images/mainlast.jpg" class="imga" alt="main course">
+            <button class="button2" onclick="myFunction5()">Order Now</button>
+        </div>
+    </div>
+  </section>
+</section>
+
+
 <section>
   <div class="gallery-section" id="section7">
-    <h2><b>GALLERY</b></h2>
+    <h3><b>GALLERY</b></h3>
   </div>  
   <div class="gallery">
     <img src="./images/img01.jpg" class="img-fluid" alt="...">
@@ -257,6 +420,7 @@
   </div>
 </section>
 <hr>
+
 
 <section>
 <div class="feedback">
@@ -363,11 +527,6 @@
 </div>
 
 <hr>
-  
-
-  
-
-
 
 <!-- Footer -->
 <section id="footer" class="gradient-background">
@@ -404,27 +563,13 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
         </ul>
-      </div>
-  
-      
+      </div> 
     </footer>
   </div>
-
 </section>
-
-
-
-   
-
-
-
-
-  
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 <script src="index.js"></script> 
    
 </body>
