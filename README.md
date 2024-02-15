@@ -11,3 +11,6 @@ The website homepage is made responsive. And also we included the second page i.
 
 ----4th commit----
 Feedback and Footer section added and made responsive.
+
+----5th commit----
+Done
